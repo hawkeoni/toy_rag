@@ -9,10 +9,10 @@ def pdf_to_text(pdf_path):
     return full_text
 
 # Example usage
-text = pdf_to_text("/root/2502.09992v2.pdf")
+text = pdf_to_text("/root/2501.12948v1.pdf")
 chunks = []
-length = 1000
-for start in range(0, len(text), 800):
+length = 800
+for start in range(0, len(text), 600):
     chunks.append(text[start: start + length])
 print(len(chunks))
 
